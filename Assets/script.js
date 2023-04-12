@@ -19,8 +19,8 @@ $(document).ready(function () {
     });
   });
 
-// for each class hourly, decide if the current time is = to < or > than the current hour
-// removes or adds for color based on hour
+  // for each class hourly, decide if the current time is = to < or > than the current hour
+  // removes or adds for color based on hour
   $(".hrly").each(function () {
     let hourBlock = $(this).attr("id").split("-")[1];
 
@@ -28,19 +28,34 @@ $(document).ready(function () {
       $(this).removeClass("past");
       $(this).removeClass("future");
       $(this).addClass("present");
-    }
-    else if (currentTime > hourBlock) {
+    } else if (currentTime > hourBlock) {
       $(this).removeClass("present");
       $(this).removeClass("future");
       $(this).addClass("past");
-    }
-    else if (currentTime < hourBlock) {
+    } else if (currentTime < hourBlock) {
       $(this).removeClass("present");
       $(this).removeClass("future");
       $(this).addClass("future");
     }
-  })
+  });
 
+  // saves userinput (text value) to local storage and prints it to the corresponding time slot using HH
+  $("#hour-08 .description").val(localStorage.getItem("08"));
+  $("#hour-09 .description").val(localStorage.getItem("09"));
+  $("#hour-10 .description").val(localStorage.getItem("10"));
+  $("#hour-11 .description").val(localStorage.getItem("11"));
+  $("#hour-12 .description").val(localStorage.getItem("12"));
+  $("#hour-13 .description").val(localStorage.getItem("13"));
+  $("#hour-14 .description").val(localStorage.getItem("14"));
+  $("#hour-15 .description").val(localStorage.getItem("15"));
+  $("#hour-16 .description").val(localStorage.getItem("16"));
+  $("#hour-17 .description").val(localStorage.getItem("17"));
 
-
+  // clears all saved inputs
+  $(".clearBtn").click(function () {
+    // sets text input to empty string
+    $(".description").val("");
+    // clears local storage so page remains clear on refresh
+    localStorage.clear();
+  });
 });
