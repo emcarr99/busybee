@@ -21,7 +21,7 @@ $(document).ready(function () {
 
 // for each class hourly, decide if the current time is = to < or > than the current hour
 // removes or adds for color based on hour
-  $(".hourly").each(function () {
+  $(".hrly").each(function () {
     let hourBlock = $(this).attr("id").split("-")[1];
 
     if (currentTime == hourBlock) {
