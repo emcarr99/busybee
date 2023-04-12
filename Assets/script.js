@@ -19,4 +19,18 @@ $('.saveBtn').click(function(){
   localStorage.setItem(inputTime,description);
   // stores user input
 });
+// assigns color & compares chunk to present time
+$('.time-block').each(function () {
+  let currentTime = dayjs().hour();
+  let hourlyRow = parseInt($(this).attr('id').split('-')[1]);
+
+  if (hourlyRow === currentTime) {
+    $(this).addClass('present');
+  } else if (hourlyRow > currentTime) {
+    $(this).addClass("future");
+  } else {
+    $(this).addClass("past");
+  }
+})
+
 
