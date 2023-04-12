@@ -52,7 +52,7 @@ $(document).ready(function () {
   $("#hour-17 .description").val(localStorage.getItem("17"));
 
   // clears all saved inputs
-  $(".clearBtn").click(function () {
+  $(".cleanBtn").click(function () {
     // sets text input to empty string
     $(".description").val("");
     // clears local storage so page remains clear on refresh
