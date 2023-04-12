@@ -9,5 +9,14 @@ function showTime() {
 showTime();
 setInterval(showTime, 1000);
 
+// save button function
+$('.saveBtn').click(function(){
+  let description = $(this).siblings('.description').val();
+  // text input is the sibling of the save btn
+  let inputTime = $(this).parent().attr('id');
+  // time is the parent of save btn + attaching hour id
 
+  localStorage.setItem(inputTime,description);
+  // stores user input
+});
 
