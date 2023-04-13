@@ -36,4 +36,10 @@ $('.time-block').each(function () {
 for (i = 9; i < 18; i++) {
   $(`#hour-${i} .description`).val(localStorage.getItem(`hour-${i}`));
 }
+// button to clear all input
+$('.cleanBtn').click(function() {
 
+  $('.description').val('');
+
+  localStorage.clear();
+})
