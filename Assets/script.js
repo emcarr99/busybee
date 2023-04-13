@@ -22,15 +22,18 @@ $('.saveBtn').click(function(){
 // assigns color & compares chunk to present time
 $('.time-block').each(function () {
   let currentTime = dayjs().hour();
-  let hourlyRow = parseInt($(this).attr('id').split('-')[1]);
+  var rowHour = parseInt($(this).attr("id").split("-")[1]);
 
-  if (hourlyRow === currentTime) {
+  if (rowHour === currentTime) {
     $(this).addClass('present');
-  } else if (hourlyRow > currentTime) {
+  } else if (rowHour > currentTime) {
     $(this).addClass("future");
   } else {
     $(this).addClass("past");
   }
 })
 
+for (i = 9; i < 18; i++) {
+  $(`#hour-${i} .description`).val(localStorage.getItem(`hour-${i}`));
+}
 
