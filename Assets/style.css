@@ -1,3 +1,7 @@
+html {
+  cursor: url("cursor_copy.png"), auto !important;
+}
+
 body {
   font-family: 'Open Sans', sans-serif;
   font-size: 16px;
@@ -10,6 +14,11 @@ textarea {
   color: #000000;
   border-left: 1px solid black;
   padding: 10px;
+  cursor: url("cursor_copy.png"), auto !important;
+}
+
+.jumbotron img {
+  align-items: center;
 }
 
 .description {
