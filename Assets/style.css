@@ -29,9 +29,9 @@ textarea {
 p {
   text-align: center;
   background-color: var(--bright);
-  border-radius: 3rem;
+  border-radius: 1rem;
   border: 5px  solid  #000000;
-  padding: 5px;
+  padding: 20px;
 }
 
 .description {
