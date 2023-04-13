@@ -11,6 +11,12 @@ html {
   cursor: url("./Images/cursor_copy.png"), auto !important;
 }
 
+header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 body {
   font-family: "Open Sans", sans-serif;
   font-size: 15px;
@@ -26,12 +32,16 @@ textarea {
   cursor: url("./Images/cursor_copy.png"), auto !important;
 }
 
-p {
+#currentDay {
+  display: flex;
+  flex-direction: column;
   text-align: center;
   background-color: var(--bright);
-  border-radius: 3rem;
+  border-radius: 1rem;
   border: 5px  solid  #000000;
-  padding: 5px;
+  padding: 20px !important;
+  width: 300px;
+  font-size: 8.5px !important;
 }
 
 .description {
@@ -99,13 +109,15 @@ p {
   transform: scale(1.1);
 }
 
-.lead {
-  display: flex;
-  justify-content: center;
+@media screen and (min-width:700px) {
+  #currentDay {
+    width: 500px;
+    font-size: 15px !important;
+  }
 }
-
-/* .styleBorder {
-  border-top: solid black;
-  border-bottom: solid black;
-} */
-/* don't love this yet */
+  @media screen and (min-width:900px) {
+  #currentDay {
+    width: 800px;
+    font-size: 25px !important;
+  }
+}
