@@ -1,6 +1,19 @@
+:root {
+  --bright: #f4845f;
+  --dark: #5e17eb;
+}
+
+* {
+font-family: 'Press Start 2P', cursive;
+}
+
+html {
+  cursor: url("cursor_copy.png"), auto !important;
+}
+
 body {
-  font-family: 'Open Sans', sans-serif;
-  font-size: 16px;
+  font-family: "Open Sans", sans-serif;
+  font-size: 15px;
 }
 
 textarea {
@@ -10,6 +23,15 @@ textarea {
   color: #000000;
   border-left: 1px solid black;
   padding: 10px;
+  cursor: url("cursor_copy.png"), auto !important;
+}
+
+p {
+  text-align: center;
+  background-color: var(--bright);
+  border-radius: 3rem;
+  border: 5px  solid  #000000;
+  padding: 5px;
 }
 
 .description {
@@ -17,7 +39,7 @@ textarea {
 }
 
 .time-block {
-  border-radius: 15px;
+  border-radius: 20px;
 }
 
 .row {
@@ -25,32 +47,33 @@ textarea {
 }
 
 .hour {
-  background-color: #ffffff;
+  background-color: var(--bright);
   color: #000000;
-  border-top: 1px dashed #000000;
+  border-radius: 0.8rem;
+  font-size: small;
 }
 
 .past {
-  background-color: #d3d3d3;
+  background-color: #FAC7A6;
   color: white;
 }
 
 .present {
-  background-color: #ff6961;
+  background-color: #F78965;
   color: white;
 }
 
 .future {
-  background-color: #77dd77;
+  background-color: #F76579;
   color: white;
 }
 
 .saveBtn {
-  border-left: 1px solid black;
+  border: 2px solid black;
   border-top-right-radius: 15px;
   border-bottom-right-radius: 15px;
-  background-color: #06aed5;
-  color: white;
+  background-color: var(--dark);
+  color: var(--peach);
 }
 
 .saveBtn i:hover {
@@ -63,14 +86,26 @@ textarea {
 }
 
 .cleanBtn {
+  background-color: #FF66C4;
   margin: 20px 0;
   padding: 10px;
   border: 2px solid black;
   border-radius: 10px;
-  transition: all .3s ease-in-out;
+  transition: all 0.3s ease-in-out;
 }
 
 .cleanBtn:hover {
   padding: 14px;
   transform: scale(1.1);
 }
+
+.lead {
+  display: flex;
+  justify-content: center;
+}
+
+/* .styleBorder {
+  border-top: solid black;
+  border-bottom: solid black;
+} */
+/* don't love this yet */
