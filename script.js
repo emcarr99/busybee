@@ -4,7 +4,7 @@ let timeShow = $("#currentDay");
 // fix time display
 function showTime() {
   let rn = dayjs().format(
-    "[Current Date & Time:] MMM DD, YYYY [at] hh:mm:ss a"
+    "MMM DD, YYYY [at] hh:mm:ss a"
   );
   timeShow.text(rn);
 }
@@ -23,6 +23,7 @@ $(".saveBtn").click(function () {
   // stores user input
 });
 // assigns color & compares chunk to present time
+
 $(".time-block").each(function () {
   let hourHour = dayjs().format("HH");
   let rowHour = parseInt($(this).attr("id").split("-")[1]);
