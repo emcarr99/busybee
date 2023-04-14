@@ -16,6 +16,7 @@ To fill out the schedule simply click on the blank space next to the time spot y
 <img src = "Assets/Images/text-save.png">
 
 What if its a new day! Do I have to go delete every single thing I wrote? No! Scroll down to the bottom of the page and click 'Clear All' to completely erase any saved input. 
+
 <img src = "Assets/Images/clear-button.png">
 
 Now the only thing left to do is schedule! (and do laundry).
