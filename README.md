@@ -7,7 +7,7 @@ A simple application that allows users to schedule their work day. Users are abl
 N/A
 
 ## Usage
-You can find the Busy Bee Scheduler here: 
+You can find the Busy Bee Scheduler here: https://emcarr99.github.io/busybee/
 
 Upon clicking the link you will be taken to your scheduler. Where you will be met by Mr. Busy Bee! You'll also see the current day & time, and the color code of past/present/future.
 <img src= "Assets/Images/mrbusybee.png">
